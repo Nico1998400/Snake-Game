@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#game-board {
+    background-color: #ccc;
+    width: 100vmin;
+    height: 100vmin;
+    display: grid;
+    /* Same rows evenly split, Exactly same height and witdth */
+    grid-template-rows: repeat(21, 1fr); 
+    grid-template-columns: repeat(21, 1fr);
+}
+    .snake  {
+        background-color: green;
+        /* Scaling with the grid */
+        border: .25vmin solid black;
+    }
+    .food {
+        background-color: yellow;
+        /* Scaling with the grid */
+        border: .25vmin solid black;
+    }
+
+    .restartbtn { 
+        font-size: 30px;
+        text-decoration: none;
+        color: black;
+        
+    }
+
+    .button {
+        
+    }
