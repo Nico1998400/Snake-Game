@@ -1,6 +1,6 @@
 import { getInputDirection } from "./input.js"
 
-export const SNAKE_SPEED = 10 // How many times the snake moves pers second = Controlig how fast the game should be
+export const SNAKE_SPEED = 10 // How many times the snake moves pers second = Controlig how fast the game should be 
 const snakeBody = [{ x: 11, y: 11 }] // Using grid to draw Snake by X and Y angle , Starting in the middle becouse 11 x and 11 y.
 let newSegments = 0 // Setting snake to default not growing.
 
@@ -65,3 +65,9 @@ function addSegments() {
     newSegments = 0
 }
 
+let score = 0;
+const userScore = document.getElementById("user-score")
+ function game() {
+     score++;
+     userScore.innerHTML = score;
+     console.log("score"); }

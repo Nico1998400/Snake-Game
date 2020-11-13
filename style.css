@@ -5,10 +5,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #ae0b05;
 }
 #game-board {
-    background-color: #ccc;
+    background-color: rgb(236, 236, 236);
     width: 100vmin;
     height: 100vmin;
     display: grid;
@@ -28,12 +28,13 @@ body {
     }
 
     .restartbtn { 
-        font-size: 30px;
         text-decoration: none;
-        color: black;
-        
+        color: black;        
     }
 
-    .button {
+    img {
+        position: absolute;
+        top: 20px;
+        left: 20px;
         
     }
